@@ -18,17 +18,24 @@
 /* Global  */
 
 @font-face {
-  font-family: "iransans";
+  font-family: "Yekan_m";
   font-style: normal;
   font-weight: 400;
   src: url("fonts/Xino-Yekan-Medium.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "irbold";
+  font-family: "Yebold";
   font-style: normal;
   font-weight: 700;
   src: url("fonts/Xino-Yekan-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Extender_MRX";
+  font-style: normal;
+  /* font-weight: 700; */
+  src: url("fonts/Acumin-BdPro.otf") format("truetype");
 }
 
 .f6 {
@@ -91,6 +98,11 @@
   font-size: 48px;
 }
 
+.f90 {
+  font-size: 90px;
+  font-family: "Extender_MRX" !important;
+}
+
 .l15-26 {
   line-height: 15.26px;
 }
@@ -146,19 +158,20 @@
 .l81-39 {
   line-height: 81.39px;
 }
-.h-46 {
-  height: 46px;
-}
-.h-56 {
-  height: 56px;
+
+.h-50 {
+  height: 50px;
 }
 
-.h-213 {
-  height: 213px;
+.w-380 {
+  width: 380px;
 }
 
 .rounded10 {
   border-radius: 10px;
+}
+.rounded50 {
+  border-radius: 50px;
 }
 
 .rounded100 {
@@ -223,7 +236,9 @@
 .bg-gray {
   background-color: #f5f6f7;
 }
-
+.bg-yellow {
+  background-color: #e6c45c;
+}
 .text-link {
   color: #1489f5;
 }
@@ -256,7 +271,7 @@
 }
 
 .fw-bold {
-  font-family: "irbold";
+  font-family: "Yebold";
 }
 
 .text-justify {
@@ -270,7 +285,7 @@
 }
 
 body * {
-  font-family: "iransans";
+  font-family: "Yekan_m";
   outline: none;
 }
 
@@ -287,10 +302,16 @@ body a {
 }
 
 strong {
-  font-family: "irbold";
+  font-family: "Yebold";
 }
 
 ul {
   list-style: none;
+}
+
+
+.custom-btn {
+  width: 380px;
+  height: 50px;
 }
 /* Global  */
