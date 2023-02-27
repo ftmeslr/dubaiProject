@@ -32,10 +32,10 @@
 }
 
 @font-face {
-  font-family: "Extender_MRX";
+  font-family: "Acumin";
   font-style: normal;
   /* font-weight: 700; */
-  src: url("fonts/Acumin-BdPro.otf") format("truetype");
+  src: url("fonts/Acumin-BdPro.woff") format("truetype");
 }
 
 @font-face {
@@ -110,7 +110,7 @@
 
 .f90 {
   font-size: 90px;
-  font-family: "Extender_MRX" !important;
+  font-family: "Acumin" !important;
 }
 
 .l15-26 {
@@ -213,6 +213,9 @@
 .p-150 {
   padding: 0 150px;
 }
+.pe-10{
+  padding-right: 100px;
+}
 .white-shadow {
   box-shadow: 0px 0px 48px 8px rgba(0, 0, 0, 0.04);
 }
@@ -262,7 +265,7 @@
 }
 
 .bg-gray {
-  background-color: #f9f9f9;
+  background-color: #f4f4f4;
 }
 .bg-yellow {
   background-color: #e6c45c;
@@ -360,6 +363,10 @@ ul {
   top: -150px;
 }
 
+.top--400{
+  margin
+}
+
 .mt-10{
   margin-top: 200px;
 }
@@ -405,4 +412,12 @@ ul {
   border-radius: 100%;
   border: 1px solid #fff;
   margin: 0 5px;
+}
+
+.mt--20{
+  margin-top: -20px ;
+}
+
+.title__Home{
+  top:70px;
 }
