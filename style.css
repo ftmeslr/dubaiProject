@@ -41,14 +41,14 @@
   font-family: "Acumin";
   font-style: normal;
   /* font-weight: 700; */
-  src: url("fonts/Acumin-BdPro.woff") format("truetype");
+  src: url("fonts/Acumin-Pro-Condensed-Black.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Extender";
   font-style: normal;
   /* font-weight: 700; */
-  src: url("fonts/Extender X4 Deeper_MRT.TTf") format("truetype");
+  src: url("fonts/Extender-X4-Deeper_MRT.TTF") format("truetype");
 }
 
 .icon-car1:before {
@@ -137,7 +137,7 @@
 }
 
 .f90 {
-  font-size: 80px;
+  font-size: 90px;
   font-family: "Acumin" !important;
 }
 
@@ -203,6 +203,10 @@
 
 .w-380 {
   width: 380px;
+}
+
+.w-18 {
+  width: 18px;
 }
 
 .rounded10 {
@@ -444,7 +448,7 @@ ul {
 
 .background_section .title_box .title {
   font-size: 60px;
-  font-family: "Extender";
+  font-family: "Extender" !important;
 }
 
 .border-warning {
@@ -462,7 +466,7 @@ ul {
 }
 
 .mt--20 {
-  margin-top: -20px;
+  margin-top: -15px;
 }
 
 .title__Home {
@@ -519,4 +523,10 @@ ul {
 }
 #aboutSectionThree .title {
   font-family: "Extender";
+}
+
+.showServiceBut {
+  width: 100%;
+  text-align: end;
+  margin-left: 87px;
 }
