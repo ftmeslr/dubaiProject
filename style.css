@@ -137,7 +137,7 @@
 }
 
 .f90 {
-  font-size: 90px;
+  font-size:80px;
   font-family: "Acumin" !important;
 }
 
@@ -271,7 +271,9 @@
 .text-white {
   color: #fff;
 }
-
+.bg-transparent {
+  background-color: transparent;
+}
 .bg-red {
   background-color: #f41c1c;
 }
@@ -368,6 +370,12 @@ ul {
 .custom-btn {
   width: 380px;
   height: 50px;
+  background-color: #e6c45c;
+}
+
+.custom-btn:hover {
+  background: transparent;
+  border: 1px solid #e6c45c;
 }
 
 .custom-mini-btn {
@@ -456,10 +464,13 @@ ul {
 
 .title__Home {
   top: 70px;
+  margin: auto;
+  left: 0;
+  right: 0;
 }
 
 .top-600 {
-  top: 500px;
+  top: 650px;
 }
 .w-500 {
   width: 670px;
