@@ -41,7 +41,8 @@
   font-family: "Acumin";
   font-style: normal;
   /* font-weight: 700; */
-  src: url("fonts/Acumin-Pro-Condensed-Black.ttf") format("truetype");
+  src: url("fonts/Acumin-Pro-Condensed-Black.ttf") format("truetype"),
+    url("fonts/Acumin-Pro-Condensed");
 }
 
 @font-face {
@@ -209,6 +210,12 @@
   width: 18px;
 }
 
+.w-110 {
+  width: 110px;
+}
+.h-110 {
+  height: 110px;
+}
 .rounded10 {
   border-radius: 10px;
 }
@@ -303,6 +310,10 @@
 }
 .bg-yellow {
   background-color: #e6c45c;
+}
+
+.bg-yellow-light {
+  background-color: #f0e7ca;
 }
 
 .text-yellow {
@@ -475,6 +486,9 @@ ul {
   left: 0;
   right: 0;
 }
+.top-10 {
+  top: 20px;
+}
 
 .top-600 {
   top: 650px;
@@ -483,7 +497,9 @@ ul {
   width: 670px;
   text-align: center;
 }
-
+.w-550 {
+  width: 550px;
+}
 /* title page styles */
 
 #aboutOne .title {
