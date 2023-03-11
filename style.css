@@ -409,9 +409,7 @@ ul {
   margin: 10px auto;
 }
 
-.border-yellow {
-  border: 1px solid #e6c45c9c;
-}
+
 /* Global  */
 
 /* header */
@@ -433,6 +431,9 @@ ul {
 
 .top--30 {
   top: -150px;
+}
+.top-100 {
+  top: 100px !important;
 }
 
 .mt-10 {
@@ -512,6 +513,13 @@ ul {
 
 .h-450 {
   height: 450px;
+}
+
+.h-490 {
+  height: 490px;
+}
+.h-300 {
+  height: 300px;
 }
 
 .h-250 {
