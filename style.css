@@ -406,8 +406,7 @@ ul {
 
 .yellow_line--bold {
   height: 2px;
-  margin:10px auto;
-
+  margin: 10px auto;
 }
 
 .border-yellow {
@@ -567,4 +566,9 @@ ul {
 
 .mt-50 {
   margin-top: 50px;
+}
+
+.title {
+  font-size: 72px;
+  font-family: "Extender" !important;
 }
