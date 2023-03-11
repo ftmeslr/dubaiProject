@@ -500,6 +500,14 @@ ul {
 .w-550 {
   width: 550px;
 }
+
+.h-440 {
+  height: 440px;
+}
+
+.h-250{
+  height: 250px;
+}
 /* title page styles */
 
 #aboutOne .title {
