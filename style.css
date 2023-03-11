@@ -403,6 +403,16 @@ ul {
   background-color: #e6c45c9c;
   margin: 0 auto 50px auto;
 }
+
+.yellow_line--bold {
+  height: 2px;
+  margin:10px auto;
+
+}
+
+.border-yellow {
+  border: 1px solid #e6c45c9c;
+}
 /* Global  */
 
 /* header */
@@ -501,11 +511,11 @@ ul {
   width: 550px;
 }
 
-.h-440 {
-  height: 440px;
+.h-450 {
+  height: 450px;
 }
 
-.h-250{
+.h-250 {
   height: 250px;
 }
 /* title page styles */
