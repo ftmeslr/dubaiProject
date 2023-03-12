@@ -563,7 +563,6 @@ ul {
 
 #aboutOne .title {
   font-family: "Extender";
-  
 }
 
 #aboutOne .top-460 {
@@ -607,10 +606,17 @@ ul {
   font-size: 33px;
 }
 
-#contactUsSection .icon{
+#contactUsSection .icon {
   width: 20px;
   height: 20px;
   margin-left: 20px;
+}
+
+#contactUsSection .sub_title {
+  font-family: "Extender";
+  font-size: 36px;
+  margin: 20px auto ;
+  text-align: center;
 }
 .showServiceBut {
   width: 100%;
@@ -631,4 +637,3 @@ ul {
   font-size: 22px;
   margin-top: 10px;
 }
-
