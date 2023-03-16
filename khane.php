@@ -175,372 +175,34 @@ get_header();
       <div class="container">
         <p class="f18 text-center fw-bold">خانه رویاییتان را انتخاب کنید!</p>
         <div class="row">
+<?php while(have_rows("houses")){ the_row(); ?>
           <div class="col-6 mt-3">
-            <div
-              class="border h-450 text-center border-yellow p-0 rounded10 overflow-hidden border-warning"
-            >
+            <div class="border h-450 text-center border-yellow p-0 rounded10 overflow-hidden border-warning">
               <div class="h-250">
-                <div
-                  class="swiper mySwiper pe-lg-3 h-100"
-                  style="padding: 0px !important"
-                  id="experts"
-                  dir="rtl"
-                >
+                <div class="swiper mySwiper pe-lg-3 h-100" style="padding: 0px !important" id="experts" dir="rtl">
                   <div class="swiper-wrapper">
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
+<?php foreach(get_sub_field("pics") as $pic){ ?>
+                    <div class="swiper-slide flex-column" style="padding: 0px !important">
                       <div class="w-100 h-250">
-                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Home/06.jpg" />
+                        <img class="w-100 h-100" src="<?=$pic; ?>" />
                       </div>
                     </div>
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
-                      <div class="w-100 h-250">
-                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Home/06.jpg" />
-                      </div>
-                    </div>
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
-                      <div class="w-100 h-250">
-                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Home/06.jpg" />
-                      </div>
-                    </div>
+<?php } ?>
                   </div>
 
-                  <div
-                    class="swiper-button-next icon-arrow-left f9 start-0 text-white ms-2"
-                  ></div>
-                  <div
-                    class="swiper-button-prev icon-arrow-right f9 text-white"
-                  ></div>
+                  <div class="swiper-button-next icon-arrow-left f9 start-0 text-white ms-2"></div>
+                  <div class="swiper-button-prev icon-arrow-right f9 text-white"></div>
                 </div>
               </div>
-              <p class="f24 fw-bold m-0 mt-2">Dubai Creek Harbour</p>
-              <p class="f14 m-0">آپارتمان‌های ساحلی 1، 2 و 3 خوابه</p>
+              <p class="f24 fw-bold m-0 mt-2"><?php the_sub_field("title"); ?></p>
+              <p class="f14 m-0"><?php the_sub_field("place"); ?></p>
               <div class="yellow_line yellow_line--bold"></div>
-              <p class="text-center f14">
-                استخر - باشگاه مجهز - پارک و رستوران - فضای باربکیو - اتاق بازی
-                کودکان اسپا - منظره <br />
-                تماشایی - امکانات مدرن
-              </p>
-              <button
-                class="w-300 h-30 bg-yellow fw-bold border-0 rounded50 px-3 py-1 f14"
-              >
-                شروع قیمت از 1/2 ملیون درهم
-              </button>
+              <p class="text-center f14"><?php the_sub_field("feau"); ?></p>
+              <button class="w-300 h-30 bg-yellow fw-bold border-0 rounded50 px-3 py-1 f14"><?php the_sub_field("price"); ?></button>
             </div>
           </div>
-          <div class="col-6 mt-3">
-            <div
-              class="border h-450 text-center border-yellow p-0 rounded10 overflow-hidden border-warning"
-            >
-              <div class="h-250">
-                <div
-                  class="swiper mySwiper pe-lg-3 h-100"
-                  style="padding: 0px !important"
-                  id="experts"
-                  dir="rtl"
-                >
-                  <div class="swiper-wrapper">
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
-                      <div class="w-100 h-250">
-                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Home/06.jpg" />
-                      </div>
-                    </div>
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
-                      <div class="w-100 h-250">
-                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Home/06.jpg" />
-                      </div>
-                    </div>
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
-                      <div class="w-100 h-250">
-                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Home/06.jpg" />
-                      </div>
-                    </div>
-                  </div>
+<?php } ?>
 
-                  <div
-                    class="swiper-button-next icon-arrow-left f9 start-0 text-white ms-2"
-                  ></div>
-                  <div
-                    class="swiper-button-prev icon-arrow-right f9 text-white"
-                  ></div>
-                </div>
-              </div>
-              <p class="f24 fw-bold m-0 mt-2">Dubai Creek Harbour</p>
-              <p class="f14 m-0">آپارتمان‌های ساحلی 1، 2 و 3 خوابه</p>
-              <div class="yellow_line yellow_line--bold"></div>
-              <p class="text-center f14">
-                استخر - باشگاه مجهز - پارک و رستوران - فضای باربکیو - اتاق بازی
-                کودکان اسپا - منظره <br />
-                تماشایی - امکانات مدرن
-              </p>
-              <button
-                class="w-300 h-30 bg-yellow fw-bold border-0 rounded50 px-3 py-1 f14"
-              >
-                شروع قیمت از 1/2 ملیون درهم
-              </button>
-            </div>
-          </div>
-          <div class="col-6 mt-3">
-            <div
-              class="border h-450 text-center border-yellow p-0 rounded10 overflow-hidden border-warning"
-            >
-              <div class="h-250">
-                <div
-                  class="swiper mySwiper pe-lg-3 h-100"
-                  style="padding: 0px !important"
-                  id="experts"
-                  dir="rtl"
-                >
-                  <div class="swiper-wrapper">
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
-                      <div class="w-100 h-250">
-                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Home/06.jpg" />
-                      </div>
-                    </div>
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
-                      <div class="w-100 h-250">
-                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Home/06.jpg" />
-                      </div>
-                    </div>
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
-                      <div class="w-100 h-250">
-                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Home/06.jpg" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="swiper-button-next icon-arrow-left f9 start-0 text-white ms-2"
-                  ></div>
-                  <div
-                    class="swiper-button-prev icon-arrow-right f9 text-white"
-                  ></div>
-                </div>
-              </div>
-              <p class="f24 fw-bold m-0 mt-2">Dubai Creek Harbour</p>
-              <p class="f14 m-0">آپارتمان‌های ساحلی 1، 2 و 3 خوابه</p>
-              <div class="yellow_line yellow_line--bold"></div>
-              <p class="text-center f14">
-                استخر - باشگاه مجهز - پارک و رستوران - فضای باربکیو - اتاق بازی
-                کودکان اسپا - منظره <br />
-                تماشایی - امکانات مدرن
-              </p>
-              <button
-                class="w-300 h-30 bg-yellow fw-bold border-0 rounded50 px-3 py-1 f14"
-              >
-                شروع قیمت از 1/2 ملیون درهم
-              </button>
-            </div>
-          </div>
-          <div class="col-6 mt-3">
-            <div
-              class="border h-450 text-center border-yellow p-0 rounded10 overflow-hidden border-warning"
-            >
-              <div class="h-250">
-                <div
-                  class="swiper mySwiper pe-lg-3 h-100"
-                  style="padding: 0px !important"
-                  id="experts"
-                  dir="rtl"
-                >
-                  <div class="swiper-wrapper">
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
-                      <div class="w-100 h-250">
-                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Home/06.jpg" />
-                      </div>
-                    </div>
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
-                      <div class="w-100 h-250">
-                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Home/06.jpg" />
-                      </div>
-                    </div>
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
-                      <div class="w-100 h-250">
-                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Home/06.jpg" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="swiper-button-next icon-arrow-left f9 start-0 text-white ms-2"
-                  ></div>
-                  <div
-                    class="swiper-button-prev icon-arrow-right f9 text-white"
-                  ></div>
-                </div>
-              </div>
-              <p class="f24 fw-bold m-0 mt-2">Dubai Creek Harbour</p>
-              <p class="f14 m-0">آپارتمان‌های ساحلی 1، 2 و 3 خوابه</p>
-              <div class="yellow_line yellow_line--bold"></div>
-              <p class="text-center f14">
-                استخر - باشگاه مجهز - پارک و رستوران - فضای باربکیو - اتاق بازی
-                کودکان اسپا - منظره <br />
-                تماشایی - امکانات مدرن
-              </p>
-              <button
-                class="w-300 h-30 bg-yellow fw-bold border-0 rounded50 px-3 py-1 f14"
-              >
-                شروع قیمت از 1/2 ملیون درهم
-              </button>
-            </div>
-          </div>
-          <div class="col-6 mt-3">
-            <div
-              class="border h-450 text-center border-yellow p-0 rounded10 overflow-hidden border-warning"
-            >
-              <div class="h-250">
-                <div
-                  class="swiper mySwiper pe-lg-3 h-100"
-                  style="padding: 0px !important"
-                  id="experts"
-                  dir="rtl"
-                >
-                  <div class="swiper-wrapper">
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
-                      <div class="w-100 h-250">
-                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Home/06.jpg" />
-                      </div>
-                    </div>
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
-                      <div class="w-100 h-250">
-                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Home/06.jpg" />
-                      </div>
-                    </div>
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
-                      <div class="w-100 h-250">
-                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Home/06.jpg" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="swiper-button-next icon-arrow-left f9 start-0 text-white ms-2"
-                  ></div>
-                  <div
-                    class="swiper-button-prev icon-arrow-right f9 text-white"
-                  ></div>
-                </div>
-              </div>
-              <p class="f24 fw-bold m-0 mt-2">Dubai Creek Harbour</p>
-              <p class="f14 m-0">آپارتمان‌های ساحلی 1، 2 و 3 خوابه</p>
-              <div class="yellow_line yellow_line--bold"></div>
-              <p class="text-center f14">
-                استخر - باشگاه مجهز - پارک و رستوران - فضای باربکیو - اتاق بازی
-                کودکان اسپا - منظره <br />
-                تماشایی - امکانات مدرن
-              </p>
-              <button
-                class="w-300 h-30 bg-yellow fw-bold border-0 rounded50 px-3 py-1 f14"
-              >
-                شروع قیمت از 1/2 ملیون درهم
-              </button>
-            </div>
-          </div>
-          <div class="col-6 mt-3">
-            <div
-              class="border h-450 text-center border-yellow p-0 rounded10 overflow-hidden border-warning"
-            >
-              <div class="h-250">
-                <div
-                  class="swiper mySwiper pe-lg-3 h-100"
-                  style="padding: 0px !important"
-                  id="experts"
-                  dir="rtl"
-                >
-                  <div class="swiper-wrapper">
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
-                      <div class="w-100 h-250">
-                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Home/06.jpg" />
-                      </div>
-                    </div>
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
-                      <div class="w-100 h-250">
-                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Home/06.jpg" />
-                      </div>
-                    </div>
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
-                      <div class="w-100 h-250">
-                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Home/06.jpg" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="swiper-button-next icon-arrow-left f9 start-0 text-white ms-2"
-                  ></div>
-                  <div
-                    class="swiper-button-prev icon-arrow-right f9 text-white"
-                  ></div>
-                </div>
-              </div>
-              <p class="f24 fw-bold m-0 mt-2">Dubai Creek Harbour</p>
-              <p class="f14 m-0">آپارتمان‌های ساحلی 1، 2 و 3 خوابه</p>
-              <div class="yellow_line yellow_line--bold"></div>
-              <p class="text-center f14">
-                استخر - باشگاه مجهز - پارک و رستوران - فضای باربکیو - اتاق بازی
-                کودکان اسپا - منظره <br />
-                تماشایی - امکانات مدرن
-              </p>
-              <button
-                class="w-300 h-30 bg-yellow fw-bold border-0 rounded50 px-3 py-1 f14"
-              >
-                شروع قیمت از 1/2 ملیون درهم
-              </button>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -552,131 +214,18 @@ get_header();
 
       <div class="container">
         <div class="p-150">
-          <a
-            class="rounded10 d-flex justify-content-between align-items-center w-100 d-block f13 text-black bg-gray p-3 border-warning my-1 text-decoration-none"
-            data-bs-toggle="collapse"
-            href="#collapseExample0"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapseExample0"
-          >
-            <span>دبی پرجمعیت‌ترین شهر امارات متحده عربی است؟</span>
+        <?php while(have_rows("faqs")){ the_row(); ?>
+          <a class="rounded10 d-flex justify-content-between align-items-center w-100 d-block f13 text-black bg-gray p-3 border-warning my-1 text-decoration-none" data-bs-toggle="collapse" href="#collapseExample<?=get_row_index();?>" role="button" aria-expanded="false" aria-controls="collapseExample<?=get_row_index();?>">
+            <span><?php the_sub_field("title"); ?></span>
             <img src="<?php bloginfo("template_directory"); ?>/images/icons/down-arrow.png" class="w-18" />
           </a>
-          <div class="collapse" id="collapseExample0">
+          <div class="collapse" id="collapseExample<?=get_row_index();?>">
             <div class="card card-body f12 border-0">
-              لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. لورم
-              ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
+              <?php the_sub_field("text"); ?>
             </div>
           </div>
+<?php }  ?>
 
-          <a
-            class="rounded10 d-flex justify-content-between align-items-center w-100 d-block f13 text-black bg-gray p-3 border-warning my-1 text-decoration-none"
-            data-bs-toggle="collapse"
-            href="#collapseExample1"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapseExample1"
-          >
-            <span
-              >افرادی که اقامت دبی را می‌گیرند، هر چند ماه باید وارد خاک کشور
-              امارات متحده عربی شوند؟</span
-            >
-            <img src="<?php bloginfo("template_directory"); ?>/images/icons/down-arrow.png" class="w-18" />
-          </a>
-          <div class="collapse" id="collapseExample1">
-            <div class="card card-body f12 border-0">
-              لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. لورم
-              ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
-            </div>
-          </div>
-
-          <a
-            class="rounded10 d-flex justify-content-between align-items-center w-100 d-block f13 text-black bg-gray p-3 border-warning my-1 text-decoration-none"
-            data-bs-toggle="collapse"
-            href="#collapseExample2"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapseExample2"
-          >
-            <span>اقامت طلایی ده ساله دبی مخصوص چه افرادی است؟</span>
-            <img src="<?php bloginfo("template_directory"); ?>/images/icons/down-arrow.png" class="w-18" />
-          </a>
-          <div class="collapse" id="collapseExample2">
-            <div class="card card-body f12 border-0">
-              لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. لورم
-              ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
-            </div>
-          </div>
-
-          <a
-            class="rounded10 d-flex justify-content-between align-items-center w-100 d-block f13 text-black bg-gray p-3 border-warning my-1 text-decoration-none"
-            data-bs-toggle="collapse"
-            href="#collapseExample4"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapseExample4"
-          >
-            <span>اجاره ماشین در دبی معمولاً چند ‌روزه است؟</span>
-            <img src="<?php bloginfo("template_directory"); ?>/images/icons/down-arrow.png" class="w-18" />
-          </a>
-          <div class="collapse" id="collapseExample4">
-            <div class="card card-body f12 border-0">
-              لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. لورم
-              ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
-            </div>
-          </div>
-
-          <a
-            class="rounded10 d-flex justify-content-between align-items-center w-100 d-block f13 text-black bg-gray p-3 border-warning my-1 text-decoration-none"
-            data-bs-toggle="collapse"
-            href="#collapseExample5"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapseExample5"
-          >
-            <span>دبی پرجمعیت‌ترین شهر امارات متحده عربی است؟</span>
-            <img src="images/icons/down-arrow.png" class="w-18" />
-          </a>
-          <div class="collapse" id="collapseExample5">
-            <div class="card card-body f12 border-0">
-              لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. لورم
-              ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
-            </div>
-          </div>
-
-          <a
-            class="rounded10 d-flex justify-content-between align-items-center w-100 d-block f13 text-black bg-gray p-3 border-warning my-1 text-decoration-none"
-            data-bs-toggle="collapse"
-            href="#collapseExample6"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapseExample6"
-          >
-            <span
-              >افرادی که اقامت دبی را می‌گیرند، هر چند ماه باید وارد خاک کشور
-              امارات متحده عربی شوند؟</span
-            >
-            <img src="<?php bloginfo("template_directory"); ?>/images/icons/down-arrow.png" class="w-18" />
-          </a>
-          <div class="collapse" id="collapseExample6">
-            <div class="card card-body f12 border-0">
-              لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. لورم
-              ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
-            </div>
-          </div>
         </div>
       </div>
     </section>

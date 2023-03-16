@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php 
+/*
+template name: Index
+*/
+get_header(); ?>
     <!--section one-->
     <section id="heroSection" class="my-3 rounded10 overflow-hidden">
       <div class="ps-0">
@@ -28,18 +32,13 @@
           <div class="position-absolute d-flex flex-column align-items-center justify-content-center start-0 end-0 m-auto bottom-0 w-380 top-600 w-500">
             <p class="f24 fw-bold mb-2">هلدینگ «ولکام دبی»</p>
             <p class="f16 mb-2">
-              هلدینگ «ولکام دبی» از سال 2005 فعالیت خود را در دبی آغاز کرده است.
-              فعالیت این مجموعه هم در ایران و هم در دبی کاملاً قانونی است. دفاتر
-              معتبر این هلدینگ در تهران و دبی همواره آمادۀ پاسخگویی و ارائۀ
-              مشاوره دربارۀ خدمات و فعالیت‌های این مجموعه هستند. مدیران و
-              کارمندان این مجموعه نیز از افراد قدیمی این حوزه هستند و بیش از
-              بیست سال است که در دبی مشغول به فعالیت هستند.
+              <?php the_field("about"); ?>
             </p>
-            <a href="#" class="f12 text-yellow mt-2">بیشتر بخوانید</a>
+            <a href="<?php the_field("about_url"); ?>" class="f12 text-yellow mt-2">بیشتر بخوانید</a>
             <p class="f24 m-0">دریافت پشتیبانی و مشاوره</p>
             <input class="w-380 h-50 rounded50 border text-center my-3 py-2 h-50 bg-transparent" type="text" placeholder="phone/Email"/>
             <button class="btn custom-btn rounded50">submit</button>
-            <a href="#" class="f12 mt-4 text-black cursor-pointer">تماس با ما</a>
+            <a href="<?php the_field("contact_us"); ?>" class="f12 mt-4 text-black cursor-pointer">تماس با ما</a>
           </div>
         </div>
       </div>
@@ -55,17 +54,11 @@
             <div>
               <p class="f24 fw-bold mb-2">خرید خانه در دبی</p>
               <p class="f14 text-justify">
-                دبی شهری با آب‌وهوای گرم و مرطوب است. در طول زمستان آب‌وهوای آن
-                معتدل است و بیشتر روزهای سال آسمانی آفتابی دارد. جمعیت این شهر
-                عمدتاً مسلمان هستند و زبان رسمی آن عربی و سپس انگلیسی است.
-                آزادی‌های مدنی در این شهر برای تمام افراد تضمین شده است و
-                امکانات بسیار مناسبی برای عموم کسانی که در این شهر اقامت دارند
-                مهیا است. گفتنی است که بلندترین برج جهان یعنی برج خلیفه نیز در
-                این شهر واقع است.
+                <?php the_field("buy_house"); ?>
               </p>
             </div>
             <button class="btn custom-mini-btn bg-yellow rounded50 f12 py-2 border">
-              <span class="d-block -mt-2">بیشتر ببینید </span>
+              <a href="<?php the_field("buy_house_url"); ?>"><span class="d-block -mt-2">بیشتر ببینید </span></a>
             </button>
           </div>
           <div class="col-5 d-flex justify-content-end">
@@ -86,17 +79,11 @@
             <div>
               <p class="f24 fw-bold mb-2">اجاره‌ی ماشین در دبی</p>
               <p class="f14 text-justify">
-                اجارۀ خودرو در دبی علاوه بر راحتی فراوانی که برای شما به همراه
-                می‌آورد، هزینه‌های شما را در زمان اقامت در دبی به صورت چشمگیری
-                کاهش می‌دهد. هلدینگ ولکام دبی با فراهم کردن امکان اجارۀ خودروهای
-                اقتصادی در دبی موجب شده است تمامی عزیزانی که از این سرویس
-                استفاده می‌کنند آسایش بسیار زیادی را تجربه کنند. انواع ماشین‌های
-                سواری را می‌توانید حتی پیش از ورود به دبی و از طریق دفتر ایران
-                ما اجاره کنید و با خیالی راحت سفر خود را آغاز نمایید.
+                <?php the_field("rent_car"); ?>
               </p>
             </div>
             <button class="btn custom-mini-btn bg-yellow rounded50 f12 py-2 border">
-              <span class="d-block -mt-2">بیشتر ببینید </span>
+              <a href="<?php the_field("rent_car_url"); ?><span class="d-block -mt-2">بیشتر ببینید </span></a>
             </button>
           </div>
         </div>
@@ -107,16 +94,11 @@
             <div>
               <p class="f24 fw-bold mb-2">ثبت شرکت در دبی</p>
               <p class="f14 text-justify">
-                دبی به دلیل داشتن وضعیت باثبات سیاسی و روند روبه‌رشد اقتصادی در
-                سال‌های اخیر به یکی از مقاصد تجارتی از سراسر دنیا تبدیل شده است.
-                افراد با ثبت شرکت در دبی می‌توانند اقامت امارات را برای خود و
-                خانواده‌شان بگیرند. البته برای تأسیس شرکت نیازی نیست حتماً تابعۀ
-                این کشور شد و بسیاری از تاجران ایرانی صرفاً برای رشد کسب‌وکار
-                خود دست به این اقدام می‌زنند.
+                <?php the_field("company"); ?>
               </p>
             </div>
             <button class="btn custom-mini-btn bg-yellow rounded50 f12 py-2 border">
-              <span class="d-block -mt-2">بیشتر ببینید </span>
+              <a href="<?php the_field("company_url"); ?>"><span class="d-block -mt-2">بیشتر ببینید </span></a>
             </button>
           </div>
           <div class="col-5 d-flex justify-content-end">
@@ -220,87 +202,21 @@
 
       <div class="container">
         <div class="p-150">
-          <a class="rounded10 d-flex justify-content-between align-items-center w-100 d-block f13 text-black bg-gray p-3 border-warning my-1 text-decoration-none" data-bs-toggle="collapse" href="#collapseExample0" role="button" aria-expanded="false" aria-controls="collapseExample0">
-            <span>دبی پرجمعیت‌ترین شهر امارات متحده عربی است؟</span>
+<?php while(have_rows("faqs")){ the_row(); ?>
+          <a class="rounded10 d-flex justify-content-between align-items-center w-100 d-block f13 text-black bg-gray p-3 border-warning my-1 text-decoration-none" data-bs-toggle="collapse" href="#collapseExample<?=get_row_index();?>" role="button" aria-expanded="false" aria-controls="collapseExample<?=get_row_index();?>">
+            <span><?php the_sub_field("title"); ?></span>
             <img src="<?php bloginfo("template_directory"); ?>/images/icons/down-arrow.png" class="w-18" />
           </a>
-          <div class="collapse" id="collapseExample0">
+          <div class="collapse" id="collapseExample<?=get_row_index();?>">
             <div class="card card-body f12 border-0">
-              لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. لورم
-              ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
+              <?php the_sub_field("text"); ?>
             </div>
           </div>
+<?php }  ?>
+          
 
-          <a class="rounded10 d-flex justify-content-between align-items-center w-100 d-block f13 text-black bg-gray p-3 border-warning my-1 text-decoration-none" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
-            <span
-              >افرادی که اقامت دبی را می‌گیرند، هر چند ماه باید وارد خاک کشور
-              امارات متحده عربی شوند؟</span
-            >
-            <img src="<?php bloginfo("template_directory"); ?>/images/icons/down-arrow.png" class="w-18" />
-          </a>
-          <div class="collapse" id="collapseExample1">
-            <div class="card card-body f12 border-0">
-              لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. لورم
-              ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
-            </div>
-          </div>
+          
 
-          <a class="rounded10 d-flex justify-content-between align-items-center w-100 d-block f13 text-black bg-gray p-3 border-warning my-1 text-decoration-none" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false"aria-controls="collapseExample2">
-            <span>اقامت طلایی ده ساله دبی مخصوص چه افرادی است؟</span>
-            <img src="<?php bloginfo("template_directory"); ?>/images/icons/down-arrow.png" class="w-18" />
-          </a>
-          <div class="collapse" id="collapseExample2">
-            <div class="card card-body f12 border-0">
-              لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. لورم
-              ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
-            </div>
-          </div>
-
-          <a class="rounded10 d-flex justify-content-between align-items-center w-100 d-block f13 text-black bg-gray p-3 border-warning my-1 text-decoration-none" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
-            <span>اجاره ماشین در دبی معمولاً چند ‌روزه است؟</span>
-            <img src="<?php bloginfo("template_directory"); ?>/images/icons/down-arrow.png" class="w-18" />
-          </a>
-          <div class="collapse" id="collapseExample4">
-            <div class="card card-body f12 border-0">
-              لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. لورم
-              ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
-            </div>
-          </div>
-
-          <a class="rounded10 d-flex justify-content-between align-items-center w-100 d-block f13 text-black bg-gray p-3 border-warning my-1 text-decoration-none" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
-            <span>دبی پرجمعیت‌ترین شهر امارات متحده عربی است؟</span>
-            <img src="<?php bloginfo("template_directory"); ?>/images/icons/down-arrow.png" class="w-18" />
-          </a>
-          <div class="collapse" id="collapseExample5">
-            <div class="card card-body f12 border-0">
-              لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. لورم
-              ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
-            </div>
-          </div>
-
-          <a class="rounded10 d-flex justify-content-between align-items-center w-100 d-block f13 text-black bg-gray p-3 border-warning my-1 text-decoration-none" data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6">
-            <span>افرادی که اقامت دبی را می‌گیرند، هر چند ماه باید وارد خاک کشور
-              امارات متحده عربی شوند؟</span>
-            <img src="<?php bloginfo("template_directory"); ?>/images/icons/down-arrow.png" class="w-18" />
-          </a>
-          <div class="collapse" id="collapseExample6">
-            <div class="card card-body f12 border-0">
-              لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. لورم
-              ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
-            </div>
-          </div>
         </div>
       </div>
     </section>

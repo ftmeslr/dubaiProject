@@ -258,131 +258,21 @@ get_header();
 
       <div class="container">
         <div class="p-150">
-          <a
-            class="rounded10 d-flex justify-content-between align-items-center w-100 d-block f13 text-black bg-gray p-3 border-warning my-1 text-decoration-none"
-            data-bs-toggle="collapse"
-            href="#collapseExample0"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapseExample0"
-          >
-            <span>دبی پرجمعیت‌ترین شهر امارات متحده عربی است؟</span>
-            <img src="<?php bloginfo("template_directory"); ?>/images/icons/down-arrow.png" class="w-18" />
-          </a>
-          <div class="collapse" id="collapseExample0">
-            <div class="card card-body f12 border-0">
-              لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. لورم
-              ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
-            </div>
-          </div>
 
-          <a
-            class="rounded10 d-flex justify-content-between align-items-center w-100 d-block f13 text-black bg-gray p-3 border-warning my-1 text-decoration-none"
-            data-bs-toggle="collapse"
-            href="#collapseExample1"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapseExample1"
-          >
-            <span
-              >افرادی که اقامت دبی را می‌گیرند، هر چند ماه باید وارد خاک کشور
-              امارات متحده عربی شوند؟</span
-            >
-            <img src="<?php bloginfo("template_directory"); ?>/images/icons/down-arrow.png" class="w-18" />
-          </a>
-          <div class="collapse" id="collapseExample1">
-            <div class="card card-body f12 border-0">
-              لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. لورم
-              ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
-            </div>
-          </div>
 
-          <a
-            class="rounded10 d-flex justify-content-between align-items-center w-100 d-block f13 text-black bg-gray p-3 border-warning my-1 text-decoration-none"
-            data-bs-toggle="collapse"
-            href="#collapseExample2"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapseExample2"
-          >
-            <span>اقامت طلایی ده ساله دبی مخصوص چه افرادی است؟</span>
+        <?php while(have_rows("faqs")){ the_row(); ?>
+          <a class="rounded10 d-flex justify-content-between align-items-center w-100 d-block f13 text-black bg-gray p-3 border-warning my-1 text-decoration-none" data-bs-toggle="collapse" href="#collapseExample<?=get_row_index();?>" role="button" aria-expanded="false" aria-controls="collapseExample<?=get_row_index();?>">
+            <span><?php the_sub_field("title"); ?></span>
             <img src="<?php bloginfo("template_directory"); ?>/images/icons/down-arrow.png" class="w-18" />
           </a>
-          <div class="collapse" id="collapseExample2">
+          <div class="collapse" id="collapseExample<?=get_row_index();?>">
             <div class="card card-body f12 border-0">
-              لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. لورم
-              ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
+              <?php the_sub_field("text"); ?>
             </div>
           </div>
+<?php }  ?>
 
-          <a
-            class="rounded10 d-flex justify-content-between align-items-center w-100 d-block f13 text-black bg-gray p-3 border-warning my-1 text-decoration-none"
-            data-bs-toggle="collapse"
-            href="#collapseExample4"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapseExample4"
-          >
-            <span>اجاره ماشین در دبی معمولاً چند ‌روزه است؟</span>
-            <img src="<?php bloginfo("template_directory"); ?>/images/icons/down-arrow.png" class="w-18" />
-          </a>
-          <div class="collapse" id="collapseExample4">
-            <div class="card card-body f12 border-0">
-              لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. لورم
-              ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
-            </div>
-          </div>
 
-          <a
-            class="rounded10 d-flex justify-content-between align-items-center w-100 d-block f13 text-black bg-gray p-3 border-warning my-1 text-decoration-none"
-            data-bs-toggle="collapse"
-            href="#collapseExample5"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapseExample5"
-          >
-            <span>دبی پرجمعیت‌ترین شهر امارات متحده عربی است؟</span>
-            <img src="<?php bloginfo("template_directory"); ?>/images/icons/down-arrow.png" class="w-18" />
-          </a>
-          <div class="collapse" id="collapseExample5">
-            <div class="card card-body f12 border-0">
-              لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. لورم
-              ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
-            </div>
-          </div>
-
-          <a
-            class="rounded10 d-flex justify-content-between align-items-center w-100 d-block f13 text-black bg-gray p-3 border-warning my-1 text-decoration-none"
-            data-bs-toggle="collapse"
-            href="#collapseExample6"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapseExample6"
-          >
-            <span
-              >افرادی که اقامت دبی را می‌گیرند، هر چند ماه باید وارد خاک کشور
-              امارات متحده عربی شوند؟</span
-            >
-            <img src="<?php bloginfo("template_directory"); ?>/images/icons/down-arrow.png" class="w-18" />
-          </a>
-          <div class="collapse" id="collapseExample6">
-            <div class="card card-body f12 border-0">
-              لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. لورم
-              ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-              بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
-            </div>
-          </div>
         </div>
       </div>
     </section>

@@ -17,22 +17,24 @@
             </div>
             <div class="row">
               <div class="col-6 d-flex text-white f12">
-                <div class="col-4 d-flex flex-column justify-content-start">
-                  <a class="text-white text-decoration-none fw-bold mt-50" href="#" >خدمات:</a>
-                  <a class="text-white text-decoration-none" href="#">اخذ اقامت قانونی دبی</a>
-                  <a class="text-white text-decoration-none" href="#">سرمایه‌گذاری مطمئن در دبی</a>
-                  <a class="text-white text-decoration-none" href="#">خرید خانه در دبی</a>
-                </div>
-                <div class="col-4 d-flex flex-column justify-content-center">
-                  <a class="text-white text-decoration-none" href="#">باز کردن حساب بانکی در دبی</a>
-                  <a class="text-white text-decoration-none" href="#">اجارۀ ماشین در دبی</a>
-                  <a class="text-white text-decoration-none" href="#">ثبت شرکت در دبی</a>
-                </div>
-                <div class="col-4 d-flex flex-column justify-content-center">
-                  <a class="text-white text-decoration-none" href="#">سوالات متداول</a>
-                  <a class="text-white text-decoration-none" href="#">تماس با ما</a>
-                  <a class="text-white text-decoration-none" href="#">درباره ما</a>
-                </div>
+              <?php
+$locations = get_nav_menu_locations();
+if(isset($locations["footer"])){
+    $menu = wp_get_nav_menu_object($locations["footer"]);
+    if($menu){
+        $items = wp_get_nav_menu_items( $menu->term_id, array( 'update_post_term_cache' => false ) );
+        $c = 0;
+        foreach($items as $i){
+            if($c % 3 == 0){ echo '<div class="col-4 d-flex flex-column justify-content-start">'; }
+            echo '<a class="text-white text-decoration-none" href="'.$i->url.'">'.$i->title.'</a>';
+            $c+=1;
+            if($c % 3 == 0){ echo '</div>'; }
+            
+        }
+        if($c % 3 != 0){ echo '</div>'; }
+    }
+}
+?>
               </div>
               <div class="col-6 justify-content-end align-items-center d-flex flex-column">
                 <img src="images/icons/footer logo.png" alt="footer logo" />
@@ -51,17 +53,17 @@
                 <p>© 1402 تمامی حقوق محفوظ است</p>
               </div>
               <div class="d-flex col-6 justify-content-center">
-                <a class="circle d-flex align-items-center justify-content-center" href="#">
-                  <img class="w-100" src="images/icons/facebook(1).png" alt=""/>
+                <a class="circle d-flex align-items-center justify-content-center" href="<?=get_option("wb_fb","#"); ?>">
+                  <img class="w-100" src="<?php bloginfo("template_directory"); ?>/images/icons/facebook(1).png" alt=""/>
                 </a>
-                <a class="circle d-flex align-items-center justify-content-center" href="#">
-                  <img class="w-100" src="images/icons/instagram(2).png" alt="" />
+                <a class="circle d-flex align-items-center justify-content-center" href="<?=get_option("wb_insta","#"); ?>">
+                  <img class="w-100" src="<?php bloginfo("template_directory"); ?>/images/icons/instagram(2).png" alt="" />
                 </a>
-                <a class="circle d-flex align-items-center justify-content-center" href="#">
-                  <img class="w-100" src="images/icons/whatsapp(1).png" alt="" />
+                <a class="circle d-flex align-items-center justify-content-center" href="<?=get_option("wb_wa","#"); ?>">
+                  <img class="w-100" src="<?php bloginfo("template_directory"); ?>/images/icons/whatsapp(1).png" alt="" />
                 </a>
-                <a class="circle d-flex align-items-center justify-content-center" href="#">
-                  <img class="w-100" src="images/icons/linkedin(2).png" alt=""/>
+                <a class="circle d-flex align-items-center justify-content-center" href="<?=get_option("wb_linkdin","#"); ?>">
+                  <img class="w-100" src="<?php bloginfo("template_directory"); ?>/images/icons/linkedin(2).png" alt=""/>
                 </a>
               </div>
             </div>

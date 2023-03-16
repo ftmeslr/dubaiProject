@@ -1,8 +1,10 @@
 <?php
+include("includes/acf.php");
 add_action('init',function(){
     //Register Nav Menus
     register_nav_menus( array(
         'menu_items'=>'لینک های منوی بالا',
+        'footer'=>'لینک های فوتر',
     ));
 });
 //Add Class Name for wpnavmenu
