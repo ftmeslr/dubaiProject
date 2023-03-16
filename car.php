@@ -1,64 +1,14 @@
-<!DOCTYPE html>
-<html lang="fa">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>welcome dubai</title>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body dir="rtl" class="bg-main">
-    <!-- header -->
-    <header class="position-absolute w-100" style="z-index: 1">
-      <div class="container">
-        <div class="row position-relative">
-          <div class="logo_box position-absolute">
-            <img class="w-100" src="images/icons/logo.png" alt="" />
-          </div>
-          <div class="col-12 px-3 d-flex align-items-center">
-            <ul
-              class="d-flex border-bottom py-4 w-100 justify-content-center f12 fw-bold"
-            >
-              <li class="mx-5">
-                <a href="#" class="text-decoration-none text-black">خانه</a>
-              </li>
-              <li class="mx-4">
-                <a href="#" class="text-decoration-none text-black"
-                  >فهرست خدمات</a
-                >
-              </li>
-              <li class="mx-5">
-                <a href="#" class="text-decoration-none text-black"
-                  >تماس با ما</a
-                >
-              </li>
-              <li class="mx-4">
-                <a href="#" class="text-decoration-none text-black"
-                  >تماس با ما</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- header  -->
-
-    <!--section one-->
+<?php
+/*
+template name: Car
+*/
+get_header(); ?>
+<!--section one-->
     <section class="my-3 rounded10 position-relative zIndex-0">
       <div class="w-100 m-auto">
-        <img
-          class="d-block m-auto w-100 h-auto"
-          src="images/Car/00.jpg"
-          alt=""
-        />
+        <img class="d-block m-auto w-100 h-auto" src="<?php bloginfo("template_directory"); ?>/images/Car/00.jpg" alt=""/>
       </div>
-      <div
-        class="m-auto text-center position-absolute z-index-2 top-100 left-0 right-0 mx-auto"
-      >
+      <div class="m-auto text-center position-absolute z-index-2 top-100 left-0 right-0 mx-auto">
         <p class="f72 fw-bold title m-0">اجارۀ ماشین در دبی</p>
         <p class="f18 m-0">
           انـواع ماشـــیـن‌های ســواری را مــی‌تـوانیـــد حتـــی پـیـــش از ورود
@@ -66,23 +16,8 @@
           <br />طریق دفتر ایران ما اجاره کنید
         </p>
       </div>
-      <div
-        style="
-          right: 0;
-          left: 0;
-          margin: auto;
-          width: 667px;
-          height: 250px;
-          bottom: -80px;
-        "
-        class="container position-absolute zIndex-1 text-center margin-auto left-0 right-0 px-5"
-      >
-        <img
-          style="width: 100%"
-          class="d-block m-auto"
-          src="images/Car/car.png"
-          alt=""
-        />
+      <div style="right: 0;left: 0;margin: auto;width: 667px;height: 250px;bottom: -80px;" class="container position-absolute zIndex-1 text-center margin-auto left-0 right-0 px-5">
+        <img style="width: 100%" class="d-block m-auto" src="<?php bloginfo("template_directory"); ?>/images/Car/car.png" alt=""/>
       </div>
     </section>
     <!--section one-->
@@ -104,64 +39,42 @@
 
     <!--section three-->
     <section class="my-3 overflow-hidden">
-      <div
-        class="h-290 bg-gray w-100 py-5 d-flex align-center-center justify-content-center"
-      >
-        <div
-          class="d-flex align-items-center justify-content-center flex-column mx-3"
-        >
+      <div class="h-290 bg-gray w-100 py-5 d-flex align-center-center justify-content-center">
+        <div class="d-flex align-items-center justify-content-center flex-column mx-3">
           <div class="w-110 h-110 rounded100 bg-yellow-light p-1">
-            <div
-              class="w-100 h-100 rounded100 bg-yellow d-flex align-items-center justify-content-center"
-            >
+            <div class="w-100 h-100 rounded100 bg-yellow d-flex align-items-center justify-content-center">
               <i class="icon-car1"> </i>
             </div>
           </div>
           <p class="f16 fw-bold mt-4">امکان پرداخت ریالی</p>
         </div>
-        <div
-          class="d-flex align-items-center justify-content-center flex-column mx-3"
-        >
+        <div class="d-flex align-items-center justify-content-center flex-column mx-3">
           <div class="w-110 h-110 rounded100 bg-yellow-light p-1">
-            <div
-              class="w-100 h-100 rounded100 bg-yellow d-flex align-items-center justify-content-center"
-            >
+            <div class="w-100 h-100 rounded100 bg-yellow d-flex align-items-center justify-content-center">
               <i class="icon-car1"> </i>
             </div>
           </div>
           <p class="f16 fw-bold mt-4">ارائه فاکتور رسمی</p>
         </div>
-        <div
-          class="d-flex align-items-center justify-content-center flex-column mx-3"
-        >
+        <div class="d-flex align-items-center justify-content-center flex-column mx-3">
           <div class="w-110 h-110 rounded100 bg-yellow-light p-1">
-            <div
-              class="w-100 h-100 rounded100 bg-yellow d-flex align-items-center justify-content-center"
-            >
+            <div class="w-100 h-100 rounded100 bg-yellow d-flex align-items-center justify-content-center">
               <i class="icon-car1"> </i>
             </div>
           </div>
           <p class="f16 fw-bold mt-4">متصدی فارسی زبان</p>
         </div>
-        <div
-          class="d-flex align-items-center justify-content-center flex-column mx-3"
-        >
+        <div class="d-flex align-items-center justify-content-center flex-column mx-3">
           <div class="w-110 h-110 rounded100 bg-yellow-light p-1">
-            <div
-              class="w-100 h-100 rounded100 bg-yellow d-flex align-items-center justify-content-center"
-            >
+            <div class="w-100 h-100 rounded100 bg-yellow d-flex align-items-center justify-content-center">
               <i class="icon-car1"> </i>
             </div>
           </div>
           <p class="f16 fw-bold mt-4">رزرو کاملا آنلاین</p>
         </div>
-        <div
-          class="d-flex align-items-center justify-content-center flex-column mx-3"
-        >
+        <div class="d-flex align-items-center justify-content-center flex-column mx-3">
           <div class="w-110 h-110 rounded100 bg-yellow-light p-1">
-            <div
-              class="w-100 h-100 rounded100 bg-yellow d-flex align-items-center justify-content-center"
-            >
+            <div class="w-100 h-100 rounded100 bg-yellow d-flex align-items-center justify-content-center">
               <i class="icon-car1"> </i>
             </div>
           </div>
@@ -257,56 +170,75 @@
       <div class="container">
         <p class="f18 text-center fw-bold">خانه رویاییتان را انتخاب کنید!</p>
         <div class="row px-10">
-          <div class="col-4 mt-3 " >
-            <div
-              class="border h-490 text-center p-0 rounded10 overflow-hidden border-warning"
-            >
+          <div class="col-4 mt-3">
+            <div class="border h-490 text-center p-0 rounded10 overflow-hidden border-warning">
               <div class="h-300">
-                <div
-                  class="swiper mySwiper pe-lg-3 h-100"
-                  style="padding: 0px !important"
-                  id="experts"
-                  dir="rtl"
-                >
+                <div class="swiper mySwiper pe-lg-3 h-100" style="padding: 0px !important" id="experts" dir="rtl">
                   <div class="swiper-wrapper">
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
+                    <div class="swiper-slide flex-column" style="padding: 0px !important">
                       <div class="w-100 h-300">
-                        <img class="w-100 h-100" src="images/Car/car1.jpg" />
+                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Car/car1.jpg" />
                       </div>
                     </div>
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
+                    <div class="swiper-slide flex-column" style="padding: 0px !important">
                       <div class="w-100 h-300">
-                        <img class="w-100 h-100" src="images/Car/car1.jpg" />
+                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Car/car1.jpg" />
                       </div>
                     </div>
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
+                    <div class="swiper-slide flex-column" style="padding: 0px !important">
                       <div class="w-100 h-300">
-                        <img class="w-100 h-100" src="images/Car/car1.jpg" />
+                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Car/car1.jpg" />
                       </div>
                     </div>
                   </div>
 
-                  <div
-                    class="swiper-button-next icon-arrow-left f9 start-0 text-white ms-2"
-                  ></div>
-                  <div
-                    class="swiper-button-prev icon-arrow-right f9 text-white"
-                  ></div>
+                  <div class="swiper-button-next icon-arrow-left f9 start-0 text-white ms-2"></div>
+                  <div class="swiper-button-prev icon-arrow-right f9 text-white"></div>
                 </div>
               </div>
               <p class="f18 fw-bold m-0 mt-4 mb-2">KIA SPORTAGE </p>
-              <button
-              class="w-300 h-30 bg-yellow fw-bold border-0 rounded50 px-3 py-1 f14"
-            >
+              <button class="w-300 h-30 bg-yellow fw-bold border-0 rounded50 px-3 py-1 f14">
+            روزانه 190 درهم
+            </button>
+              <div class="yellow_line yellow_line--bold my-3" ></div>
+             <div class="d-flex justify-content-center f14">
+              <p class="mx-2 m-0">4 درب</p>
+              <p class="mx-2 m-0">بنزینی</p>
+              <p class="mx-2 m-0">دنده اتومات</p>
+              <p class="mx-2 m-0">5 نفره</p>
+             </div>
+             <p class="text-center mt-2">2021</p>
+           
+            </div>
+          </div>
+          <div class="col-4 mt-3">
+            <div class="border h-490 text-center  border-warning p-0 rounded10 overflow-hidden">
+              <div class="h-300">
+                <div class="swiper mySwiper pe-lg-3 h-100" style="padding: 0px !important" id="experts" dir="rtl">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide flex-column" style="padding: 0px !important">
+                      <div class="w-100 h-300">
+                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Car/car1.jpg" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide flex-column" style="padding: 0px !important">
+                      <div class="w-100 h-300">
+                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Car/car1.jpg" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide flex-column" style="padding: 0px !important">
+                      <div class="w-100 h-300">
+                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Car/car1.jpg" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-button-next icon-arrow-left f9 start-0 text-white ms-2"></div>
+                  <div class="swiper-button-prev icon-arrow-right f9 text-white"></div>
+                </div>
+              </div>
+              <p class="f18 fw-bold m-0 mt-4 mb-2">KIA SPORTAGE </p>
+              <button class="w-300 h-30 bg-yellow fw-bold border-0 rounded50 px-3 py-1 f14">
             روزانه 190 درهم
             </button>
               <div class="yellow_line yellow_line--bold my-3" ></div>
@@ -337,7 +269,7 @@
                       style="padding: 0px !important"
                     >
                       <div class="w-100 h-300">
-                        <img class="w-100 h-100" src="images/Car/car1.jpg" />
+                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Car/car1.jpg" />
                       </div>
                     </div>
                     <div
@@ -345,7 +277,7 @@
                       style="padding: 0px !important"
                     >
                       <div class="w-100 h-300">
-                        <img class="w-100 h-100" src="images/Car/car1.jpg" />
+                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Car/car1.jpg" />
                       </div>
                     </div>
                     <div
@@ -353,70 +285,7 @@
                       style="padding: 0px !important"
                     >
                       <div class="w-100 h-300">
-                        <img class="w-100 h-100" src="images/Car/car1.jpg" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="swiper-button-next icon-arrow-left f9 start-0 text-white ms-2"
-                  ></div>
-                  <div
-                    class="swiper-button-prev icon-arrow-right f9 text-white"
-                  ></div>
-                </div>
-              </div>
-              <p class="f18 fw-bold m-0 mt-4 mb-2">KIA SPORTAGE </p>
-              <button
-              class="w-300 h-30 bg-yellow fw-bold border-0 rounded50 px-3 py-1 f14"
-            >
-            روزانه 190 درهم
-            </button>
-              <div class="yellow_line yellow_line--bold my-3" ></div>
-             <div class="d-flex justify-content-center f14">
-              <p class="mx-2 m-0">4 درب</p>
-              <p class="mx-2 m-0">بنزینی</p>
-              <p class="mx-2 m-0">دنده اتومات</p>
-              <p class="mx-2 m-0">5 نفره</p>
-             </div>
-             <p class="text-center mt-2">2021</p>
-           
-            </div>
-          </div>
-          <div class="col-4 mt-3">
-            <div
-              class="border h-490 text-center  border-warning p-0 rounded10 overflow-hidden"
-            >
-              <div class="h-300">
-                <div
-                  class="swiper mySwiper pe-lg-3 h-100"
-                  style="padding: 0px !important"
-                  id="experts"
-                  dir="rtl"
-                >
-                  <div class="swiper-wrapper">
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
-                      <div class="w-100 h-300">
-                        <img class="w-100 h-100" src="images/Car/car1.jpg" />
-                      </div>
-                    </div>
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
-                      <div class="w-100 h-300">
-                        <img class="w-100 h-100" src="images/Car/car1.jpg" />
-                      </div>
-                    </div>
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
-                      <div class="w-100 h-300">
-                        <img class="w-100 h-100" src="images/Car/car1.jpg" />
+                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Car/car1.jpg" />
                       </div>
                     </div>
                   </div>
@@ -463,7 +332,7 @@
                       style="padding: 0px !important"
                     >
                       <div class="w-100 h-300">
-                        <img class="w-100 h-100" src="images/Car/car1.jpg" />
+                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Car/car1.jpg" />
                       </div>
                     </div>
                     <div
@@ -471,7 +340,7 @@
                       style="padding: 0px !important"
                     >
                       <div class="w-100 h-300">
-                        <img class="w-100 h-100" src="images/Car/car1.jpg" />
+                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Car/car1.jpg" />
                       </div>
                     </div>
                     <div
@@ -479,7 +348,67 @@
                       style="padding: 0px !important"
                     >
                       <div class="w-100 h-300">
-                        <img class="w-100 h-100" src="images/Car/car1.jpg" />
+                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Car/car1.jpg" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="swiper-button-next icon-arrow-left f9 start-0 text-white ms-2"
+                  ></div>
+                  <div
+                    class="swiper-button-prev icon-arrow-right f9 text-white"
+                  ></div>
+                </div>
+              </div>
+              <p class="f18 fw-bold m-0 mt-4 mb-2">KIA SPORTAGE </p>
+              <button class="w-300 h-30 bg-yellow fw-bold border-0 rounded50 px-3 py-1 f14">
+            روزانه 190 درهم
+            </button>
+              <div class="yellow_line yellow_line--bold my-3" ></div>
+             <div class="d-flex justify-content-center f14">
+              <p class="mx-2 m-0">4 درب</p>
+              <p class="mx-2 m-0">بنزینی</p>
+              <p class="mx-2 m-0">دنده اتومات</p>
+              <p class="mx-2 m-0">5 نفره</p>
+             </div>
+             <p class="text-center mt-2">2021</p>
+           
+            </div>
+          </div>   <div class="col-4 mt-3 " >
+            <div
+              class="border h-490 text-center p-0 rounded10 overflow-hidden border-warning"
+            >
+              <div class="h-300">
+                <div
+                  class="swiper mySwiper pe-lg-3 h-100"
+                  style="padding: 0px !important"
+                  id="experts"
+                  dir="rtl"
+                >
+                  <div class="swiper-wrapper">
+                    <div
+                      class="swiper-slide flex-column"
+                      style="padding: 0px !important"
+                    >
+                      <div class="w-100 h-300">
+                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Car/car1.jpg" />
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide flex-column"
+                      style="padding: 0px !important"
+                    >
+                      <div class="w-100 h-300">
+                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Car/car1.jpg" />
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide flex-column"
+                      style="padding: 0px !important"
+                    >
+                      <div class="w-100 h-300">
+                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Car/car1.jpg" />
                       </div>
                     </div>
                   </div>
@@ -525,7 +454,7 @@
                       style="padding: 0px !important"
                     >
                       <div class="w-100 h-300">
-                        <img class="w-100 h-100" src="images/Car/car1.jpg" />
+                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Car/car1.jpg" />
                       </div>
                     </div>
                     <div
@@ -533,7 +462,7 @@
                       style="padding: 0px !important"
                     >
                       <div class="w-100 h-300">
-                        <img class="w-100 h-100" src="images/Car/car1.jpg" />
+                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Car/car1.jpg" />
                       </div>
                     </div>
                     <div
@@ -541,69 +470,7 @@
                       style="padding: 0px !important"
                     >
                       <div class="w-100 h-300">
-                        <img class="w-100 h-100" src="images/Car/car1.jpg" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="swiper-button-next icon-arrow-left f9 start-0 text-white ms-2"
-                  ></div>
-                  <div
-                    class="swiper-button-prev icon-arrow-right f9 text-white"
-                  ></div>
-                </div>
-              </div>
-              <p class="f18 fw-bold m-0 mt-4 mb-2">KIA SPORTAGE </p>
-              <button
-              class="w-300 h-30 bg-yellow fw-bold border-0 rounded50 px-3 py-1 f14"
-            >
-            روزانه 190 درهم
-            </button>
-              <div class="yellow_line yellow_line--bold my-3" ></div>
-             <div class="d-flex justify-content-center f14">
-              <p class="mx-2 m-0">4 درب</p>
-              <p class="mx-2 m-0">بنزینی</p>
-              <p class="mx-2 m-0">دنده اتومات</p>
-              <p class="mx-2 m-0">5 نفره</p>
-             </div>
-             <p class="text-center mt-2">2021</p>
-           
-            </div>
-          </div>   <div class="col-4 mt-3 " >
-            <div
-              class="border h-490 text-center p-0 rounded10 overflow-hidden border-warning"
-            >
-              <div class="h-300">
-                <div
-                  class="swiper mySwiper pe-lg-3 h-100"
-                  style="padding: 0px !important"
-                  id="experts"
-                  dir="rtl"
-                >
-                  <div class="swiper-wrapper">
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
-                      <div class="w-100 h-300">
-                        <img class="w-100 h-100" src="images/Car/car1.jpg" />
-                      </div>
-                    </div>
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
-                      <div class="w-100 h-300">
-                        <img class="w-100 h-100" src="images/Car/car1.jpg" />
-                      </div>
-                    </div>
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
-                      <div class="w-100 h-300">
-                        <img class="w-100 h-100" src="images/Car/car1.jpg" />
+                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Car/car1.jpg" />
                       </div>
                     </div>
                   </div>
@@ -649,7 +516,7 @@
                       style="padding: 0px !important"
                     >
                       <div class="w-100 h-300">
-                        <img class="w-100 h-100" src="images/Car/car1.jpg" />
+                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Car/car1.jpg" />
                       </div>
                     </div>
                     <div
@@ -657,7 +524,7 @@
                       style="padding: 0px !important"
                     >
                       <div class="w-100 h-300">
-                        <img class="w-100 h-100" src="images/Car/car1.jpg" />
+                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Car/car1.jpg" />
                       </div>
                     </div>
                     <div
@@ -665,69 +532,7 @@
                       style="padding: 0px !important"
                     >
                       <div class="w-100 h-300">
-                        <img class="w-100 h-100" src="images/Car/car1.jpg" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="swiper-button-next icon-arrow-left f9 start-0 text-white ms-2"
-                  ></div>
-                  <div
-                    class="swiper-button-prev icon-arrow-right f9 text-white"
-                  ></div>
-                </div>
-              </div>
-              <p class="f18 fw-bold m-0 mt-4 mb-2">KIA SPORTAGE </p>
-              <button
-              class="w-300 h-30 bg-yellow fw-bold border-0 rounded50 px-3 py-1 f14"
-            >
-            روزانه 190 درهم
-            </button>
-              <div class="yellow_line yellow_line--bold my-3" ></div>
-             <div class="d-flex justify-content-center f14">
-              <p class="mx-2 m-0">4 درب</p>
-              <p class="mx-2 m-0">بنزینی</p>
-              <p class="mx-2 m-0">دنده اتومات</p>
-              <p class="mx-2 m-0">5 نفره</p>
-             </div>
-             <p class="text-center mt-2">2021</p>
-           
-            </div>
-          </div>   <div class="col-4 mt-3 " >
-            <div
-              class="border h-490 text-center p-0 rounded10 overflow-hidden border-warning"
-            >
-              <div class="h-300">
-                <div
-                  class="swiper mySwiper pe-lg-3 h-100"
-                  style="padding: 0px !important"
-                  id="experts"
-                  dir="rtl"
-                >
-                  <div class="swiper-wrapper">
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
-                      <div class="w-100 h-300">
-                        <img class="w-100 h-100" src="images/Car/car1.jpg" />
-                      </div>
-                    </div>
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
-                      <div class="w-100 h-300">
-                        <img class="w-100 h-100" src="images/Car/car1.jpg" />
-                      </div>
-                    </div>
-                    <div
-                      class="swiper-slide flex-column"
-                      style="padding: 0px !important"
-                    >
-                      <div class="w-100 h-300">
-                        <img class="w-100 h-100" src="images/Car/car1.jpg" />
+                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Car/car1.jpg" />
                       </div>
                     </div>
                   </div>
@@ -773,7 +578,7 @@
                       style="padding: 0px !important"
                     >
                       <div class="w-100 h-300">
-                        <img class="w-100 h-100" src="images/Car/car1.jpg" />
+                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Car/car1.jpg" />
                       </div>
                     </div>
                     <div
@@ -781,7 +586,7 @@
                       style="padding: 0px !important"
                     >
                       <div class="w-100 h-300">
-                        <img class="w-100 h-100" src="images/Car/car1.jpg" />
+                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Car/car1.jpg" />
                       </div>
                     </div>
                     <div
@@ -789,7 +594,69 @@
                       style="padding: 0px !important"
                     >
                       <div class="w-100 h-300">
-                        <img class="w-100 h-100" src="images/Car/car1.jpg" />
+                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Car/car1.jpg" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="swiper-button-next icon-arrow-left f9 start-0 text-white ms-2"
+                  ></div>
+                  <div
+                    class="swiper-button-prev icon-arrow-right f9 text-white"
+                  ></div>
+                </div>
+              </div>
+              <p class="f18 fw-bold m-0 mt-4 mb-2">KIA SPORTAGE </p>
+              <button
+              class="w-300 h-30 bg-yellow fw-bold border-0 rounded50 px-3 py-1 f14"
+            >
+            روزانه 190 درهم
+            </button>
+              <div class="yellow_line yellow_line--bold my-3" ></div>
+             <div class="d-flex justify-content-center f14">
+              <p class="mx-2 m-0">4 درب</p>
+              <p class="mx-2 m-0">بنزینی</p>
+              <p class="mx-2 m-0">دنده اتومات</p>
+              <p class="mx-2 m-0">5 نفره</p>
+             </div>
+             <p class="text-center mt-2">2021</p>
+           
+            </div>
+          </div>   <div class="col-4 mt-3 " >
+            <div
+              class="border h-490 text-center p-0 rounded10 overflow-hidden border-warning"
+            >
+              <div class="h-300">
+                <div
+                  class="swiper mySwiper pe-lg-3 h-100"
+                  style="padding: 0px !important"
+                  id="experts"
+                  dir="rtl"
+                >
+                  <div class="swiper-wrapper">
+                    <div
+                      class="swiper-slide flex-column"
+                      style="padding: 0px !important"
+                    >
+                      <div class="w-100 h-300">
+                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Car/car1.jpg" />
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide flex-column"
+                      style="padding: 0px !important"
+                    >
+                      <div class="w-100 h-300">
+                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Car/car1.jpg" />
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide flex-column"
+                      style="padding: 0px !important"
+                    >
+                      <div class="w-100 h-300">
+                        <img class="w-100 h-100" src="<?php bloginfo("template_directory"); ?>/images/Car/car1.jpg" />
                       </div>
                     </div>
                   </div>
@@ -839,7 +706,7 @@
             aria-controls="collapseExample0"
           >
             <span>دبی پرجمعیت‌ترین شهر امارات متحده عربی است؟</span>
-            <img src="images/icons/down-arrow.png" class="w-18" />
+            <img src="<?php bloginfo("template_directory"); ?>/images/icons/down-arrow.png" class="w-18" />
           </a>
           <div class="collapse" id="collapseExample0">
             <div class="card card-body f12 border-0">
@@ -862,7 +729,7 @@
               >افرادی که اقامت دبی را می‌گیرند، هر چند ماه باید وارد خاک کشور
               امارات متحده عربی شوند؟</span
             >
-            <img src="images/icons/down-arrow.png" class="w-18" />
+            <img src="<?php bloginfo("template_directory"); ?>/images/icons/down-arrow.png" class="w-18" />
           </a>
           <div class="collapse" id="collapseExample1">
             <div class="card card-body f12 border-0">
@@ -882,7 +749,7 @@
             aria-controls="collapseExample2"
           >
             <span>اقامت طلایی ده ساله دبی مخصوص چه افرادی است؟</span>
-            <img src="images/icons/down-arrow.png" class="w-18" />
+            <img src="<?php bloginfo("template_directory"); ?>/images/icons/down-arrow.png" class="w-18" />
           </a>
           <div class="collapse" id="collapseExample2">
             <div class="card card-body f12 border-0">
@@ -902,7 +769,7 @@
             aria-controls="collapseExample4"
           >
             <span>اجاره ماشین در دبی معمولاً چند ‌روزه است؟</span>
-            <img src="images/icons/down-arrow.png" class="w-18" />
+            <img src="<?php bloginfo("template_directory"); ?>/images/icons/down-arrow.png" class="w-18" />
           </a>
           <div class="collapse" id="collapseExample4">
             <div class="card card-body f12 border-0">
@@ -922,7 +789,7 @@
             aria-controls="collapseExample5"
           >
             <span>دبی پرجمعیت‌ترین شهر امارات متحده عربی است؟</span>
-            <img src="images/icons/down-arrow.png" class="w-18" />
+            <img src="<?php bloginfo("template_directory"); ?>/images/icons/down-arrow.png" class="w-18" />
           </a>
           <div class="collapse" id="collapseExample5">
             <div class="card card-body f12 border-0">
@@ -945,7 +812,7 @@
               >افرادی که اقامت دبی را می‌گیرند، هر چند ماه باید وارد خاک کشور
               امارات متحده عربی شوند؟</span
             >
-            <img src="images/icons/down-arrow.png" class="w-18" />
+            <img src="<?php bloginfo("template_directory"); ?>/images/icons/down-arrow.png" class="w-18" />
           </a>
           <div class="collapse" id="collapseExample6">
             <div class="card card-body f12 border-0">
@@ -959,141 +826,4 @@
       </div>
     </section>
     <!--section Faq-->
-    <!--Footer-->
-    <div class="footer mt-10">
-      <div class="bg-stone-900 pt-110 pb-5">
-        <div class="container p-47">
-          <div class="position-relative">
-            <div
-              class="row position-absolute w-100 bg-yellow rounded10 py-3 px-5 top--30 d-flex align-items-center justify-content-between"
-            >
-              <p class="col-3 m-0">دریافت پشتیبانی و مشاوره</p>
-              <div class="col-7">
-                <input
-                  type="text"
-                  class="rounded50 border-0 w-100 h-50 p-2 px-4"
-                  placeholder="ایمیل یا شماره تلفن"
-                />
-              </div>
-              <div class="col-2">
-                <button
-                  class="col-2 btn bg-stone-900 w-100 rounded50 text-white"
-                >
-                  دریافت مشاوره
-                </button>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-6 d-flex text-white f12">
-                <div class="col-4 d-flex flex-column justify-content-start">
-                  <a
-                    class="text-white text-decoration-none fw-bold mt-50"
-                    href="#"
-                    >خدمات:</a
-                  >
-                  <a class="text-white text-decoration-none" href="#"
-                    >اخذ اقامت قانونی دبی</a
-                  >
-                  <a class="text-white text-decoration-none" href="#"
-                    >سرمایه‌گذاری مطمئن در دبی</a
-                  >
-                  <a class="text-white text-decoration-none" href="#"
-                    >خرید خانه در دبی</a
-                  >
-                </div>
-                <div class="col-4 d-flex flex-column justify-content-center">
-                  <a class="text-white text-decoration-none" href="#"
-                    >باز کردن حساب بانکی در دبی</a
-                  >
-                  <a class="text-white text-decoration-none" href="#"
-                    >اجارۀ ماشین در دبی</a
-                  >
-                  <a class="text-white text-decoration-none" href="#"
-                    >ثبت شرکت در دبی</a
-                  >
-                </div>
-                <div class="col-4 d-flex flex-column justify-content-center">
-                  <a class="text-white text-decoration-none" href="#"
-                    >سوالات متداول</a
-                  >
-                  <a class="text-white text-decoration-none" href="#"
-                    >تماس با ما</a
-                  >
-                  <a class="text-white text-decoration-none" href="#"
-                    >درباره ما</a
-                  >
-                </div>
-              </div>
-              <div
-                class="col-6 justify-content-end align-items-center d-flex flex-column"
-              >
-                <img src="images/icons/footer logo.png" alt="footer logo" />
-                <p class="f10 text-white mt-3 text-center">
-                  هلدینگ «ولکام دبی» از سال 2005 فعالیت خود را در دبی آغاز کرده
-                  است. فعالیت این مجموعه هم در<br />
-                  ایران و هم دردبی کاملاً قانونی است. دفاتر معتبر این هلدینگ در
-                  تهران و دبی همواره آمادۀ پاسخگویی <br />و ارائۀ مشاوره دربارۀ
-                  خدمات و فعالیت‌های این مجموعه هستند.
-                </p>
-              </div>
-            </div>
-            <div class="footer_line"></div>
-            <div class="row">
-              <div class="col-6 text-white f12">
-                <p>© 1402 تمامی حقوق محفوظ است</p>
-              </div>
-              <div class="d-flex col-6 justify-content-center">
-                <a
-                  class="circle d-flex align-items-center justify-content-center"
-                  href="#"
-                >
-                  <img
-                    class="w-100"
-                    src="images/icons/facebook(1).png"
-                    alt=""
-                  />
-                </a>
-                <a
-                  class="circle d-flex align-items-center justify-content-center"
-                  href="#"
-                >
-                  <img
-                    class="w-100"
-                    src="images/icons/instagram(2).png"
-                    alt=""
-                  />
-                </a>
-                <a
-                  class="circle d-flex align-items-center justify-content-center"
-                  href="#"
-                >
-                  <img
-                    class="w-100"
-                    src="images/icons/whatsapp(1).png"
-                    alt=""
-                  />
-                </a>
-                <a
-                  class="circle d-flex align-items-center justify-content-center"
-                  href="#"
-                >
-                  <img
-                    class="w-100"
-                    src="images/icons/linkedin(2).png"
-                    alt=""
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Footer-->
-
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/custom.js"></script>
-  </body>
-</html>
+<?php get_footer(); ?>
